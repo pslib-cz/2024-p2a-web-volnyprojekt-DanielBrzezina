@@ -2,6 +2,13 @@ import vituum from 'vituum'
 
 export default {
     plugins: [
-        vituum()
-    ]
-}
+      vituum({
+        pages: {
+          normalizeBasePath: true
+        }, 
+        imports: {
+            paths: ['./src/styles/*/**', './src/scripts/*/**']
+        }
+      })
+    ],
+  }
