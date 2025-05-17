@@ -1,0 +1,84 @@
+:root {
+    --rotate-time: .25s;
+    --move-time: .15s;
+}
+
+
+.hamburger {
+    width: 24px;
+    height: 20px;
+    position: relative;
+}
+  
+.hamburger span {
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background: #000000;
+    left: 0;
+}
+
+.hamburger span:nth-child(1) { top: 0px; }
+  
+.hamburger span:nth-child(2) { top: 8px; }
+  
+.hamburger span:nth-child(3) { bottom: 0px; }
+
+.hamburger-nav {
+    position: absolute;
+    top: 77px;
+}
+
+@media screen and (max-width: 639px) { 
+    .hamburger.active span:nth-child(1) {
+        rotate: 45deg;
+        translate: 0 8px;
+        transition: translate var(--move-time), rotate var(--rotate-time) var(--move-time);
+    }
+    .hamburger.active span:nth-child(2) {
+        translate: 0 -8px;
+        transition: translate 0s var(--move-time);
+
+    }
+    .hamburger.active span:nth-child(3) {
+        translate: 0 0px;
+        transition: translate var(--move-time), rotate var(--rotate-time) var(--move-time);
+    }
+    .hamburger span:nth-child(1) {
+        translate: 0 0px;
+        rotate: 0deg;
+        transition: translate var(--move-time) var(--rotate-time), rotate var(--rotate-time);
+    }
+    .hamburger span:nth-child(2) {
+        translate: 0 0px;
+        transition: translate 0s var(--rotate-time);
+    }
+    .hamburger span:nth-child(3) {
+        translate: 0 0px;
+        rotate: 0deg;
+        transition: translate var(--move-time) var(--rotate-time), rotate var(--rotate-time);
+    }
+    .hamburger-row.active {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+
+    }
+    .hamburger-btn{
+        overflow: hidden;
+    }
+    .hamburger-nav.active {
+        position: fixed;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        transition: right  calc(var(--move-time) + var(--rotate-time)), left calc(var(--move-time) + var(--rotate-time));
+    }
+    .hamburger-nav {
+        right: -100%;
+        left: 100%;
+        bottom: 0;
+        transition: right  calc(var(--move-time) + var(--rotate-time)), left calc(var(--move-time) + var(--rotate-time));
+    }
+}
