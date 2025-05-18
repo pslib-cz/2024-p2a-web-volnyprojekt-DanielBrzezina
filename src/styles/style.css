@@ -1,8 +1,23 @@
+:root {
+    
+    --color-link: light-dark(#D1FAFF, #101D42);
+  }
+  .link {
+    color: var(--color-link);
+  }
+body{
+    margin: 0px;
+    background-color: var(--color-link);
+}
+h1{
+    margin: auto 0;
+    font-size: 24px;
+}
 .page-logo{
     display: flex;
 }
-body{
-    margin: 0px;
+nav{
+    text-align: center;
 }
 .img-responsive{
     width: 100%;
@@ -12,6 +27,8 @@ body{
 header{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    height: 48px;
 }.display {
     overflow-x: hidden;
 }
@@ -21,7 +38,6 @@ header{
     display: flex;
     justify-content: flex-end;
     overflow-x: hidden;
-    height: 45px;
 }
 .hamburger {
     display: block;
