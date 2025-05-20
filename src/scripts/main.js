@@ -1,7 +1,6 @@
 import '../styles/style.css'
-import '../styles/hamburger.css'
-import './hamburger'
-import Swiper from 'swiper';
-import 'swiper/css';
+import './hamburger.js'
+import './swiper.js'
 
-const swiper = new Swiper(...);
+
+

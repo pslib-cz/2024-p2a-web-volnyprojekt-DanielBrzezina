@@ -1,0 +1,25 @@
+@import url(swiper/css);
+@import url(swiper/css/navigation);
+@import url(swiper/css/pagination);
+
+:root {
+    --swiper-gap:  1em;
+    --swiper-display: grid;
+    --swiper-theme-color: var(--white);
+    --swiper-pagination-color: var(--dark-blue);
+    --swiper-pagination-bullet-inactive-color: var(--gray);
+    --swiper-pagination-bullet-inactive-opacity: 1;
+    --swiper-pagination-bullet-size: 1em;
+    --swiper-pagination-bullet-horizontal-gap: 0.5em;
+    --swiper-navigation-size: 2em;
+    --swiper-navigation-sides-offset: 0.5em;
+}
+.display {
+    overflow-x: hidden;
+}
+.swiper{
+    max-height: 295px;
+}
+.swiper-slide{
+    object-fit: fill;
+}
