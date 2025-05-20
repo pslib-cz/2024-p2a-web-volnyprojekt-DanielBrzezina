@@ -16,7 +16,11 @@ html{
 }
 body{
     background-color: var(--bg);
-    overflow: hidden;
+    overflow-x: hidden;
+}
+main{
+    margin-top: 48px;
+    
 }
 h1{
     margin: auto 0;
@@ -40,10 +44,39 @@ header{
     justify-content: space-between;
     align-items: center;
     height: 48px;
-    
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--bg);
+    z-index: 3;
 }
-.card__body{
+.card{
     text-align: center;
+    margin:  48px auto;
+    border-top: solid var(--black) 2px;
+    border-bottom: solid var(--black) 2px;
+}
+.card__image{
+    max-width: fit-content;
+    margin: 0 auto;
+    max-height: 80vh;
+}
+.card__info {
+    text-decoration: underline;
+    color: var(--black);
+}
+.footer{
+    margin: 10px 20px;
+}
+.footer-info{
+    color: var(--black);
+    text-decoration: underline;
+}
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, auto));
+    gap: 2em;
 }
 
 
