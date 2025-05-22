@@ -1,4 +1,4 @@
-/* empty css              */import"./hamburger-DzGNCfwF.js";import"./swiper-u3nQDHd8.js";/* empty css               *//*!
+/* empty css              */import"./hamburger-DzGNCfwF.js";import"./swiper-CLNDW9Vw.js";/* empty css               *//*!
  * lightgallery | 2.8.3 | March 1st 2025
  * http://www.lightgalleryjs.com/
  * Copyright (c) 2020 Sachin Neravath;
