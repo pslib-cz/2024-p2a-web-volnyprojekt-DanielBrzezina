@@ -12,9 +12,7 @@
     --gray: light-dark(#594157 ,#594157 );
     color-scheme: light dark;
   }
-.logo{
-    fill: var(--black);
-  }
+
 html{
  font-family: "DM Sans", sans-serif;;
 }
@@ -36,6 +34,9 @@ h1{
 }
 .page-logo{
     display: flex;
+}
+.logo{
+    fill: var(--black);
 }
 .logo-link{
     text-decoration: none;
