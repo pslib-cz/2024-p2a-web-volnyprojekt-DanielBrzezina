@@ -5,7 +5,7 @@
 :root {
     --swiper-gap:  1em;
     --swiper-display: grid;
-    --swiper-theme-color: var(--white);
+    --swiper-theme-color: var(--black);
     --swiper-pagination-color: var(--dark-blue);
     --swiper-pagination-bullet-inactive-color: var(--gray);
     --swiper-pagination-bullet-inactive-opacity: 1;
