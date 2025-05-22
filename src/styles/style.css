@@ -1,4 +1,5 @@
 @layer reset, fonts, hamburger;
+
 @import url(./normalize.css) layer(reset);
 @import url(./fonts.css) layer(fonts);
 @import url(./hamburger.css) layer(hamburger);
@@ -9,7 +10,10 @@
     --black: light-dark(#000000,#ffffff );
     --dark-blue: light-dark(#D1FAFF,#6A8EAE);
     --gray: light-dark(#594157 ,#594157 );
-   
+    color-scheme: light dark;
+  }
+.logo{
+    fill: var(--black);
   }
 html{
  font-family: "DM Sans", sans-serif;;
@@ -17,9 +21,13 @@ html{
 body{
     background-color: var(--bg);
     overflow-x: hidden;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
 main{
     margin-top: 48px;
+    flex-grow: 1;
     
 }
 h1{
@@ -61,6 +69,7 @@ nav{
     align-items: center;
     height: 48px;
     position: fixed;
+    border-bottom: var(--black) solid 2px;
     top: 0;
     left: 0;
     right: 0;
@@ -85,7 +94,7 @@ nav{
 .footer{
     padding: 10px 20px;
     margin-top: 3em;
-    border-top: solid var(--white) 2px;
+    border-top: solid var(--black) 2px;
 }
 .footer-info{
     color: var(--black);
@@ -96,18 +105,25 @@ nav{
     grid-template-columns: repeat(auto-fit, minmax(320px, auto));
     gap: 2em;
 }
+.form__card{
+    margin-top: 48px;
+}
 .form{
     display: flex;
     flex-direction: column;
     gap: 1em;
     padding: 1em;
 }
+
 .form__element{
     font-size: 1em;
     padding: 0.5em;    
     background-color: var(--bg);
-    border: solid var(--white);
+    border: solid var(--black);
     border-radius: 8px;
+}
+.form__element::placeholder{
+    color: var(--black);
 }
 .send-btn{
     width: 80px;
@@ -117,6 +133,16 @@ nav{
     text-align: center;
     margin: auto 0;
     font-size: 24px;
+}
+.info-card{
+    text-align: center;
+    padding: 2em;
+    max-width: 300px;
+    margin: 48px auto;
+    color: var(--black);
+    margin: 0 auto;
+}
+.info-card__title {
 }
 
 

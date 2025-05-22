@@ -13,7 +13,7 @@
     position: absolute;
     height: 4px;
     width: 24px;
-    background: #000000;
+    background: var(--black);
     left: 0;
 }
 
@@ -135,13 +135,31 @@
 }
 .hamburger-nav li {
     display: block;
-    font-size: 1.5em;
     padding: 1em 1em;
+}
+.hamburger-nav li a::after {
+    content: "";
+    position: absolute;
+    bottom: 2px;
+    width: 0%;
+    left: 0;
+    height: 2px;
+    background-color: var(--black);
+    transform-origin: left;
+}
+.hamburger-nav li:hover a::after{
+    width: 100%; 
+    transition: width 0.25s;
+       
+}
+.hamburger-nav li a{
+    position: relative;
+    color: var(--black);
+    font-size: 1.5em;
+    text-decoration: none;    
 }
 
 .hamburger-nav li:hover {
-    background-color: var(--gray);
-    color: white;
 }
 
 }

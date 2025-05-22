@@ -1,6 +1,7 @@
 import '../styles/style.css'
 import './hamburger.js'
 import './swiper.js'
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 
 
