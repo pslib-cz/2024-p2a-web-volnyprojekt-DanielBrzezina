@@ -146,13 +146,13 @@ nav{
 .info-card__title {
 }
 
-
+/*
 @media screen and (min-width: 640px) {
-   /*.display {
+   .display {
         display: grid;
         grid-template-columns: minmax(min(100%, 200px), 200px) 1fr;
         gap: 1em;
-    }*/
+    }
     .hamburger-row {
         display: none;
     }
@@ -164,3 +164,31 @@ nav{
         position: static;
         border-right: 1px solid rgb(255, 255, 255);
     }}
+        */
+    @media (min-width: 640px) {
+        .hamburger-row {
+            display: none;
+        }
+     
+        .hamburger-nav {
+            transform: scaleY(1);
+            display: flex;
+            gap: 3rem;
+            position: static;
+            margin-left: auto;
+            margin-right: 2.5rem;
+        }
+     
+        .hamburger-nav menu {
+            display: flex;
+            gap: 2rem;
+            padding: 0;
+            margin: 0;
+        }
+     
+        .hamburger-content {
+            border: none;
+            padding: 0;
+        }
+    }
+     

@@ -106,7 +106,7 @@
     }
     .hamburger-nav {
         position: fixed;
-        right: -110%;
+        right: -120%;
         width: 100%;
         top: 48px;
         bottom: 0;
